@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Anil — Web Developer</title>
+  <link rel="stylesheet" href="style.css" />
+  <meta name="description" content="Anil — Web Developer. I build responsive websites and web apps. Hire me for professional web solutions." />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <h1>Anil</h1>
+        <p class="tag">Web Developer • Frontend & Small Back-end</p>
+      </div>
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="hero" class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <h2>Hi, I'm Anil</h2>
+          <p class="lead">I build clean, responsive websites that help small businesses grow. HTML • CSS • JavaScript • React (learning)</p>
+          <div class="cta">
+            <a class="btn" href="#contact">Contact Me</a>
+            <a class="btn ghost" href="#projects">View Work</a>
+            <!-- Fiverr button -->
+            <a class="btn fiverr" href="https://www.fiverr.com/s/rE0059j" target="_blank">Hire on Fiverr</a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img src="https://via.placeholder.com/320x240.png?text=Anil+Web+Dev" alt="Anil Web Developer">
+        </div>
+      </div>
+    </section>
+
+    <!-- other sections stay the same (About, Skills, Projects, Contact) -->
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>© <span id="year"></span> Anil — Web Developer. Built with ❤️.</p>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+      function submitForm(e){
+        e.preventDefault();
+        alert('Thanks! I will contact you soon.');
+        document.getElementById('contactForm').reset();
+        return false;
+      }
+    </script>
+</body>
+</html>
