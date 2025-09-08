@@ -1,0 +1,8 @@
+.btn.fiverr {
+  background-color: #1dbf73;
+  color: white;
+  border: none;
+}
+.btn.fiverr:hover {
+  background-color: #17a766;
+}
